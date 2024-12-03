@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+ 
+    background-color:#010101;
+    color: white;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px ;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: italic;
+    color: #ffffff;
+  }
+
+  .logo2{
+    text-decoration: none;
+    color: yellow;
+    transition: 0.4s;
+  }
+  .logo2:hover{
+    color: white;
+    text-decoration: underline;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+      padding: 0;
+    margin: 0;
+  }
+
+  ul li{
+    margin-right: 20px;
+     
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  ul li a:hover {
+    color: lightgreen;
+  }
+
+  /* Hamburger*/
+
+  .checkbtn{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;/*-------hide----------*/
+  }
+
+  /* CHECKBOX */
+
+  #check {
+    display: none;/*------hide------*/
+  }
+
+  /* @MEDIA */
+
+  @media(max-width:768px){
+    .checkbtn{
+        display: block;
+        order: 0;
+        margin-right: 10px;
+
+    }
+    
+    ul {
+        position: fixed;
+        top: 56px;
+        right:  -100%;
+        background-color: rgba(0, 0, 0, 0.5);;
+        width:50%;
+        height: 51vh;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.3s;
+        
+       
+      }
+
+      ul li a {
+        font-size: 20px;
+        padding: 10px 0;
+              
+      }
+
+      ul li:hover{
+        background-color:rgb(4, 20, 243);
+      }
+
+      ul li{
+       
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        padding: 10px 0;
+       
+      }
+      .logo {
+        font-size: 1em;
+      }
+
+      #check:checked ~ ul {
+        right: 0px;
+      }
+  }
+
+  /* -------------------------------------------------------- */
+  .user,.icone {
+    color: white;
+    margin: 10px;
+  }
+
+
+  
+  /* animation du slideshow*/
+  .slideshow-container{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/slideshow/slide1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+  }
+
+  @keyframes animate {
+    0%{
+      background-image: url(images/slideshow/slide2.jpeg);
+    }
+
+    50%{
+      background-image: url(images/slideshow/slide3.jpeg);
+    }
+
+    100%{
+      background-image: url(images/slideshow/slide1.jpeg);
+    }
+
+  }
+
+  
+  
+/*  M A I N */
+.class1{
+  margin-top: 100px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+
+}
+
+.image{
+  height: 427px;
+  border: 1px solid blue;
+  flex: 1;
+ 
+}
+
+.text1{
+  border: 1px solid green;
+  flex: 1;
+  padding: 10px;
+
+
+}
+.text1 h1 {
+  font-variant: small-caps;
+  font-size: 50px;
+
+}
+
+.text1 p{
+  text-indent: 50px;
+  font-size: 18px;
+}
+
+span{
+  color: red;
+}
+
+.image1{
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* لإزالة الفراغات الإضافية */
+
+
+}
+
+.fleche {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  transform: 0.4s;
+}
+
+.fleche:hover{
+  color: black;
+}
+
+@media(max-width:768px){
+  .class1,.class2{
+    flex-direction: column;
+  }
+}
+
+
+/* classe2 */
+.class2{
+  margin-top: 100px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+
+}
+
+/* .classe3 */
+
+ 
+  
+
+.product{
+  display:flex;
+  gap: 30px;
+  padding: 20px;
+ 
+
+}
+
+
+.products{
+  border: 1px solid blue;
+  padding: 20px;
+ }
+
+
+
+.prod{
+  width: 100%;
+  margin-bottom: 60px;
+  border: 2px solid green;
+  border-radius: 5px;
+ 
+}
+
+.prod1 {
+  text-decoration: none;
+  transform: 0.4px;
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+
+
+.prod1:hover {
+  color: blue;
+}
+.dollar {
+  margin-left: 60px;
+}
+
+.h1class3{
+  text-align: center;
+  font-size: 2.5em;
+  font-variant: small-caps;
+}
+
+.allproducts{
+  position: absolute;
+ 
+  left: 43%;
+  text-decoration: none;
+  transition: 0.4s;
+ 
+ 
+}
+
+.allproducts:hover{
+  color: black;
+  font-size: 1.2em;
+
+
+}
+
+@media(max-width:768px) {
+  .product{
+    flex-direction: column;
+    align-items: center;
+  }
+  .allproducts{
+   
+    left: 30%;
+    
+  }
+
+}
+
+/* footer */
+footer {
+  
+  max-width: 100%;
+ 
+  height: 400px;
+  background-color: #000000;
+  margin-top: 100px;
+  display: flex;
+  padding: 150px 30px;
+  justify-items: center;
+  
+  
+}
+.linkfooter{
+  font-size: 60px;
+  color: #717275;
+  text-decoration: none;
+}
+
+.linkfooter:hover{
+  color: white;
+}
+
+
+.h2footer{
+  margin-bottom: 100px;
+}
+.h3footer,.pfooter {
+  color:#717275;
+}
+
+.first{
+  flex: 1;
+  padding: 100px 50px;
+}
+
+.h2footer{
+  color: white;
+
+}
+
+.second{
+flex: 1;
+padding: 100px 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+  
+
+}
+.linksecond {
+  text-decoration: none;
+  color:#717275;
+  margin-bottom: 20px;
+  
+
+}
+
+.linksecond:hover{
+  color: white;
+}
+
+.h2second{
+  color: white;
+}
+.ICFOOT{
+  width: 24px;
+  color: white;
+ 
+}
+
+@media (max-width:768px){
+  footer{
+    flex-direction: column;
+    height: 100%;
+  }
+}
